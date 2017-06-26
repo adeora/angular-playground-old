@@ -49,3 +49,7 @@ function walkDependencies(level: number, path: string) {
 }
 
 walkDependencies(0, "node_modules/");
+
+let bundleContent = JSON.stringify(compilerBundle);
+
+fs.writeFileSync("compiler_bundle.json", bundleContent, {"flag": "w"});
