@@ -1,0 +1,6 @@
+A set of scripts to build a bundle for the AOT Sandbox compiler. Essentially,
+the purpose of this is to create a bundle that the AOT Sandbox will load in
+the browser.
+
+This script parses through a set of dependencies and loads them into the
+virtual file system.
