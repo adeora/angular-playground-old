@@ -70,4 +70,9 @@ export class FileSystem {
     getFileList(): string[] {
         return Object.keys(this.fileSystem);
     }
+
+    // TODO: IMPLEMENT
+    readDirectory(): string[] {
+        return [];
+    }
 };
