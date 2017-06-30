@@ -75,4 +75,11 @@ export class FileSystem {
     readDirectory(): string[] {
         return [];
     }
+
+    loadFilesIntoFileSystem(fileSystemData: {[key: string]: {}}): void {
+        let fsData: {[filename: string]: string} = fileSystemData['fileSystem'];
+        for (let fileName in Object.keys(fsData)) {
+           this.writeFile(fileName, fsData['fileName']);
+        }
+    }
 };

@@ -9,7 +9,8 @@ const bundleDependencies: string[] = [
     "rxjs",
     "symbol-observable",
     "tslib",
-    "zone.js"
+    "zone.js",
+    "typescript"
 ];
 
 const filesAllowed: string[] = [
@@ -21,7 +22,7 @@ const compilerBundle: FileSystem = new FileSystem();
 
 function walkDependencies(level: number, path: string) {
     fs.readdirSync(path).forEach(obj => {
-        
+
         let filePath: string = `${path}${obj}`;
 
         // check if its a directory or a file
