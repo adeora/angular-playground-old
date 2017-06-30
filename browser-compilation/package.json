@@ -1,0 +1,14 @@
+{
+  "name": "browser-compilation",
+  "scripts": {
+    "build": "./node_modules/webpack/bin/webpack.js ./entry.js bundle.js"
+  },
+  "devDependencies": {
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "typescript": "^2.4.1"
+  }
+}
